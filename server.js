@@ -11,7 +11,7 @@ const app = express()
 
 //Dev logging middleware
 if (process.env.NODE_ENV === 'development') {
-  app.use(morgan())
+  app.use(morgan('dev'))
 }
 
 //Mount Routers
